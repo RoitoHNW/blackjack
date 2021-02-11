@@ -5,9 +5,7 @@ api-version: 1.16
 authors: [ roitohnw ]
 description: HnwBlackjack_Plugin
 commands:
-  hbj:
-  shb:
-    invite:
-  hbhelp:
+  hb:
+
 
 
