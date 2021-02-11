@@ -1,0 +1,13 @@
+name: HnwBlackjack
+version: ${project.version}
+main: hnwblackjack.com.github.roitohnw.Com.github.roitohnw
+api-version: 1.16
+authors: [ roitohnw ]
+description: HnwBlackjack_Plugin
+commands:
+  hbj:
+  shb:
+    hbinvite:
+  hbhelp:
+
+
