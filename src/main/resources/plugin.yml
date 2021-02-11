@@ -7,7 +7,7 @@ description: HnwBlackjack_Plugin
 commands:
   hbj:
   shb:
-    hbinvite:
+    invite:
   hbhelp:
 
 
