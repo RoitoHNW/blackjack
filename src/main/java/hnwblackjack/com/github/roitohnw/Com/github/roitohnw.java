@@ -30,34 +30,37 @@ public final class roitohnw extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("hb")) {
             if (args[0].equals("help")) {
-                sender.sendMessage("/hb BJ開始コマンド\r\n/hb ダイスを2回振るコマンド");
+                sender.sendMessage("§e§l/hb BJ開始コマンド\n/hb ダイスを2回振るコマンド");
                 return true;
+                // ./hb help
             }
             if (args[0].equals("invite")) {
                 Player p = Bukkit.getPlayer(args[1]);
                 if (p == null) {
-                    sender.sendMessage("このプレイヤーは存在しません!");
+                    sender.sendMessage("§4§lこのプレイヤーは存在しません!");
                     return true;
                 }
 
                 if (!p.isOnline()) {
-                    sender.sendMessage("このプレイヤーはオフラインです！");
+                    sender.sendMessage("&4§lこのプレイヤーはオフラインです！");
                     return true;
                 }
-                sender.sendMessage(p.getName() + "を招待しました");
-                p.sendMessage(sender.getName() + "から招待が届いています");
+                sender.sendMessage(p.getName() + "§e§lを招待しました");
+                p.sendMessage(sender.getName() + "§e§lから招待が届いています");
                 return true;
+                // ./hb invite [player]
             }
         }
         if (args[0].equals("dice")) {
             int i = r.nextInt(13) + 1;
-            int l = r.nextInt(13) + 1;
-            int all = i + l;
-            Bukkit.broadcastMessage(sender.getName() + "は13面ダイスを2回振って" + i + "と" + l + "が出た" + "先行は" + all + "です");
+            int p = r.nextInt(13) + 1;
+            int all = i + p;
+            Bukkit.broadcastMessage(§6§l + sender.getName() + "§6§lは13面ダイスを2回振って" + i + "と" + p + "が出た" + "先行は" + all + "です");
             return true;
         } else {
-            sender.sendMessage("使い方が間違っています");
+            sender.sendMessage("§4§l使い方が間違っています");
             return true;
+            // ./hb dice
         }
     }
 }
