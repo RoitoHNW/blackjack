@@ -55,7 +55,7 @@ public final class roitohnw extends JavaPlugin {
             int i = r.nextInt(13) + 1;
             int p = r.nextInt(13) + 1;
             int all = i + p;
-            Bukkit.broadcastMessage(§6§l + sender.getName() + "§6§lは13面ダイスを2回振って" + i + "と" + p + "が出た" + "先行は" + all + "です");
+            Bukkit.broadcastMessage("§6§l" + sender.getName() + "§6§lは13面ダイスを2回振って" + i + "と" + p + "が出た" + "先行は" + all + "です");
             return true;
         } else {
             sender.sendMessage("§4§l使い方が間違っています");
