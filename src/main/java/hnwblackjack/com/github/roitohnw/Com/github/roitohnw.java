@@ -45,8 +45,8 @@ public final class roitohnw extends JavaPlugin {
                     sender.sendMessage("&4§lこのプレイヤーはオフラインです！");
                     return true;
                 }
-                sender.sendMessage(p.getName() + "§e§lを招待しました");
-                p.sendMessage(sender.getName() + "§e§lから招待が届いています");
+                sender.sendMessage( "§e§l" + p.getName() + "§e§lを招待しました");
+                p.sendMessage("§e§l" + sender.getName() + "§e§lから招待が届いています");
                 return true;
                 // ./hb invite [player]
             }
